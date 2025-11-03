@@ -1,0 +1,11 @@
+ID_Produto,NomeProduto,Categoria,PrecoCusto,PrecoVenda,Fornecedor
+P001,Mouse Óptico,Periféricos,100.00,150.00,TechSupply
+P002,Teclado Mecânico,Periféricos,250.00,380.00,KeyMaster
+P003,Notebook i5,Computadores,720.00,1200.00,InfoTech
+P004,Monitor 24",Monitores,150.00,210.00,ViewPlus
+P005,Fone Bluetooth,Acessórios,60.00,90.00,SoundBeat
+P006,HD Externo 1TB,Armazenamento,100.00,150.00,DataStore
+P007,Mouse Pad Gamer,Acessórios,70.00,110.00,GamePower
+P008,Cadeira Ergonômica,Móveis,450.00,700.00,ErgoTech
+P009,Teclado Sem Fio,Periféricos,180.00,280.00,TechSupply
+P010,Webcam Full HD,Acessórios,180.00,250.00,VisionPro
