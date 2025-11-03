@@ -1,0 +1,54 @@
+# ============================================
+# POWER QUERY M - ETAPAS DE TRANSFORMAÇÃO
+# ============================================
+
+# Fonte de Dados
+Fonte = Csv.Document(File.Contents("data/sales_data_sample.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+ColunasPromovidas = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+
+# Alterar tipos de dados
+TiposAlterados = Table.TransformColumnTypes(ColunasPromovidas,{
+    {"ID_Venda", Int64.Type},
+    {"DataVenda", type date},
+    {"ID_Produto", type text},
+    {"ID_Cliente", type text},
+    {"ID_Regiao", type text},
+    {"Quantidade", Int64.Type},
+    {"ValorUnitario", type number},
+    {"Desconto", type number},
+    {"ValorTotal", type number},
+    {"Lucro", type number}
+}),
+
+# Remover linhas nulas
+LinhasLimpas = Table.SelectRows(TiposAlterados, each [ID_Venda] <> null),
+
+# Mesclar Dimensão Produtos
+Produtos = Csv.Document(File.Contents("data/products.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+ProdutosPromovidos = Table.PromoteHeaders(Produtos, [PromoteAllScalars=true]),
+ProdutosTipados = Table.TransformColumnTypes(ProdutosPromovidos,{{"ID_Produto", type text}, {"NomeProduto", type text}, {"Categoria", type text}}),
+FatoComProduto = Table.NestedJoin(LinhasLimpas, {"ID_Produto"}, ProdutosTipados, {"ID_Produto"}, "Produtos", JoinKind.LeftOuter),
+ExpansaoProduto = Table.ExpandTableColumn(FatoComProduto, "Produtos", {"NomeProduto","Categoria"}),
+
+# Mesclar Dimensão Clientes
+Clientes = Csv.Document(File.Contents("data/customers.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+ClientesPromovidos = Table.PromoteHeaders(Clientes, [PromoteAllScalars=true]),
+ClientesTipados = Table.TransformColumnTypes(ClientesPromovidos,{{"ID_Cliente", type text}, {"NomeCliente", type text}, {"Segmento", type text}}),
+FatoComCliente = Table.NestedJoin(ExpansaoProduto, {"ID_Cliente"}, ClientesTipados, {"ID_Cliente"}, "Clientes", JoinKind.LeftOuter),
+ExpansaoCliente = Table.ExpandTableColumn(FatoComCliente, "Clientes", {"NomeCliente","Segmento"}),
+
+# Mesclar Dimensão Regiões
+Regioes = Csv.Document(File.Contents("data/regions.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+RegioesPromovidas = Table.PromoteHeaders(Regioes, [PromoteAllScalars=true]),
+RegioesTipadas = Table.TransformColumnTypes(RegioesPromovidas,{{"ID_Regiao", type text}, {"NomeRegiao", type text}}),
+FatoCompleto = Table.NestedJoin(ExpansaoCliente, {"ID_Regiao"}, RegioesTipadas, {"ID_Regiao"}, "Regioes", JoinKind.LeftOuter),
+ExpansaoRegiao = Table.ExpandTableColumn(FatoCompleto, "Regioes", {"NomeRegiao"}),
+
+# Colunas calculadas
+ColunaTicketMedio = Table.AddColumn(ExpansaoRegiao, "TicketMédio", each [ValorTotal]/[Quantidade]),
+ColunaMesAno = Table.AddColumn(ColunaTicketMedio, "MesAno", each Date.ToText([DataVenda], "MMM yyyy")),
+
+# Resultado Final
+Resultado = Table.ReorderColumns(ColunaMesAno,{"ID_Venda","DataVenda","MesAno","NomeProduto","Categoria","NomeCliente","Segmento","NomeRegiao","Quantidade","ValorTotal","Lucro","TicketMédio"})
+in
+Resultado
