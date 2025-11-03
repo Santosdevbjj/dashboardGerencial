@@ -1,0 +1,11 @@
+ID_Cliente,NomeCliente,Sexo,Idade,Cidade,Estado,Segmento
+C001,Ana Paula,F,31,Belo Horizonte,MG,Corporativo
+C002,João Martins,M,45,Campinas,SP,Empresarial
+C003,Marcos Silva,M,29,Rio de Janeiro,RJ,Consumidor Final
+C004,Renata Dias,F,35,Curitiba,PR,Corporativo
+C005,Caio Santos,M,26,Recife,PE,Empresarial
+C006,Patrícia Souza,F,40,Porto Alegre,RS,Corporativo
+C007,Roberto Lima,M,33,Salvador,BA,Consumidor Final
+C008,Larissa Campos,F,28,Fortaleza,CE,Empresarial
+C009,Fernando Nunes,M,47,Florianópolis,SC,Corporativo
+C010,Juliana Alves,F,37,Uberlândia,MG,Consumidor Final
