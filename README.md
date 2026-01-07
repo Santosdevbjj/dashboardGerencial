@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Contexto Profissional
+## 📌 Contexto
 
 Organizações produzem grandes volumes de dados financeiros e operacionais, porém nem sempre conseguem transformá-los em informação clara para apoiar decisões gerenciais. 
 
