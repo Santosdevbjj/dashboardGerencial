@@ -113,9 +113,6 @@ Git/GitHub – Versionamento e organização do projeto
 
 ---
 
-## 🧩 Requisitos de Hardware e Software
-
-
 
 <p align="center">
   <img src="img/Requisitos_Hardware_Software.png" width="800" title="Repositorio">
