@@ -5,16 +5,11 @@
 
 ---
 
-
-
-📊 Dashboard Gerencial para Tomada de Decisões com Power BI
-
-<img width="1080" height="746" alt="Dashboard Gerencial" src="https://github.com/user-attachments/assets/2eed60d2-9d12-470a-8b39-b58284bf825a" />
----
-
 ## 📌 Contexto Profissional
 
-Organizações produzem grandes volumes de dados financeiros e operacionais, porém nem sempre conseguem transformá-los em informação clara para apoiar decisões gerenciais. Relatórios excessivamente técnicos ou mal estruturados dificultam a leitura, aumentam o tempo de análise e reduzem o valor do dado.
+Organizações produzem grandes volumes de dados financeiros e operacionais, porém nem sempre conseguem transformá-los em informação clara para apoiar decisões gerenciais. 
+
+Relatórios excessivamente técnicos ou mal estruturados dificultam a leitura, aumentam o tempo de análise e reduzem o valor do dado.
 
 Este projeto apresenta o desenvolvimento de um Dashboard Gerencial em Power BI, com foco em clareza analítica, organização visual e suporte à tomada de decisão, aplicando boas práticas de Business Intelligence, UX em dados e modelagem analítica.
 
