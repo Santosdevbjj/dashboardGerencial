@@ -223,54 +223,6 @@ Contribuições são bem-vindas:
 
 
 
-
-
-
-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
----
-
-## 🧱 Estrutura do Repositório
-
-| Pasta | Descrição |
-|-------|------------|
-| `/docs` | Documentos de apoio, ementa, requisitos e instruções |
-| `/data` | Bases de dados simuladas em formato CSV |
-| `/models` | Arquivos `.pbix` de exemplo e modelo final |
-| `/src` | Scripts SQL, Power Query e documentação técnica |
-| `/img` | Imagens do dashboard, wireframes e animações |
-| `/tests` | Relatórios de validação, checklist e planilhas de revisão |
-
----
-
-## ⚙️ Tecnologias Utilizadas
-
-- **Microsoft Power BI Desktop** (para construção do dashboard)
-- **Power Query (M Language)** para tratamento e transformação de dados
-- **DAX (Data Analysis Expressions)** para criação de medidas e KPIs
-- **SQL** para integração com fontes de dados
-- **Excel / CSV** como base de dados auxiliar
-- **GitHub** para versionamento e colaboração
-
----
-
-## 🧩 Requisitos de Hardware e Software
-
-| Tipo | Requisito |
-|------|------------|
-| Sistema Operacional | Windows 10 ou superior |
-| Memória RAM | Mínimo 8 GB |
-| Espaço em Disco | 2 GB livres |
-| Software | Power BI Desktop 2.129+ |
-| Alternativa Online | Power BI Service (https://app.powerbi.com) |
-| Navegador Recomendado | Microsoft Edge ou Google Chrome |
-
----
-
-
-
-
-
 ---
 
 🧑‍💻 **Autor**
