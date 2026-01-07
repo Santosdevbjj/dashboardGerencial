@@ -84,14 +84,12 @@ Análise temporal e comparativa
 
 ## 🧱 Estrutura do Repositório
 
-Pasta	Descrição
 
-/docs	Documentação técnica, ementa e instruções de uso
-/data	Bases de dados simuladas em formato CSV
-/models	Arquivos .pbix (modelo e versão final)
-/src	Scripts SQL, Power Query e documentação analítica
-/img	Imagens e demonstrações do dashboard
-/tests	Checklists, validações e revisões
+
+<p align="center">
+  <img src="img/Estrutura_Repositorio.png" width="800" title="Repositorio">
+</p> 
+
 
 
 
@@ -117,14 +115,11 @@ Git/GitHub – Versionamento e organização do projeto
 
 ## 🧩 Requisitos de Hardware e Software
 
-Tipo	Requisito
 
-Sistema Operacional	Windows 10 ou superior
-Memória RAM	Mínimo 8 GB (recomendado 16 GB)
-Espaço em Disco	2 GB livres
-Software	Power BI Desktop versão 2.129 ou superior
-Alternativa Online	Power BI Service
-Navegador	Edge ou Google Chrome
+
+<p align="center">
+  <img src="img/Requisitos_Hardware_Software.png" width="800" title="Repositorio">
+</p>
 
 
 
