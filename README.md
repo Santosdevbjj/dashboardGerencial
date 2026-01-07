@@ -20,13 +20,13 @@ Este projeto apresenta o desenvolvimento de um Dashboard Gerencial em Power BI, 
 
 Construir um dashboard gerencial que permita:
 
-Visualizar indicadores-chave de desempenho (KPIs) de forma clara;
+• Visualizar indicadores-chave de desempenho (KPIs) de forma clara;
 
-Apoiar decisões estratégicas a partir de dados consolidados;
+• Apoiar decisões estratégicas a partir de dados consolidados;
 
-Aplicar princípios de UX em BI para facilitar a leitura e navegação;
+• Aplicar princípios de UX em BI para facilitar a leitura e navegação;
 
-Demonstrar domínio técnico em Power BI, DAX, modelagem e organização de dados.
+• Demonstrar domínio técnico em Power BI, DAX, modelagem e organização de dados.
 
 
 O projeto foi inspirado no desafio do curso “Atualizando Relatório Financeiro com Foco na Experiência do Usuário”, sendo adaptado para um cenário profissional real.
@@ -38,11 +38,11 @@ O projeto foi inspirado no desafio do curso “Atualizando Relatório Financeiro
 
 Gestores precisam responder perguntas como:
 
-Qual o desempenho de vendas por período, região ou produto?
+• Qual o desempenho de vendas por período, região ou produto?
 
-Quais indicadores exigem atenção imediata?
+• Quais indicadores exigem atenção imediata?
 
-Como comparar resultados de forma rápida e confiável?
+• Como comparar resultados de forma rápida e confiável?
 
 
 Sem um dashboard bem estruturado, essas respostas dependem de análises manuais, múltiplas planilhas e maior risco de erro.
@@ -54,13 +54,13 @@ Sem um dashboard bem estruturado, essas respostas dependem de análises manuais,
 
 Foi desenvolvido um Dashboard Gerencial interativo, que consolida dados financeiros e operacionais, oferecendo:
 
-KPIs organizados por prioridade visual;
+• KPIs organizados por prioridade visual;
 
-Navegação intuitiva entre páginas e visões analíticas;
+• Navegação intuitiva entre páginas e visões analíticas;
 
-Matrizes detalhadas para análise exploratória;
+• Matrizes detalhadas para análise exploratória;
 
-Layout orientado à leitura gerencial.
+• Layout orientado à leitura gerencial.
 
 
 
@@ -68,15 +68,15 @@ Layout orientado à leitura gerencial.
 
 ## 📊 Principais Indicadores (KPIs)
 
-Faturamento
+• Faturamento
 
-Margem
+• Margem
 
-Volume de Vendas
+• Volume de Vendas
 
-Ticket Médio
+• Ticket Médio
 
-Análise temporal e comparativa
+• Análise temporal e comparativa
 
 
 
@@ -97,17 +97,17 @@ Análise temporal e comparativa
 
 ## ⚙️ Tecnologias Utilizadas
 
-Power BI Desktop – Construção e visualização do dashboard
+• Power BI Desktop – Construção e visualização do dashboard
 
-DAX (Data Analysis Expressions) – Criação de medidas e KPIs
+• DAX (Data Analysis Expressions) – Criação de medidas e KPIs
 
-Power Query (M Language) – Tratamento e transformação de dados
+• Power Query (M Language) – Tratamento e transformação de dados
 
-SQL – Consulta e integração de dados
+• SQL – Consulta e integração de dados
 
-Excel / CSV – Fontes de dados auxiliares
+• Excel / CSV – Fontes de dados auxiliares
 
-Git/GitHub – Versionamento e organização do projeto
+• Git/GitHub – Versionamento e organização do projeto
 
 
 
@@ -126,22 +126,22 @@ Git/GitHub – Versionamento e organização do projeto
 
 ✔️ **Com Power BI Desktop**
 
-1. Clone o repositório:
+• 1. Clone o repositório:
 
 
 
 git clone https://github.com/Santosdevbjj/dashboardGerencial
 
-2. Abra o arquivo:
+• 2. Abra o arquivo:
 
 
 
 /models/dashboard_gerencial_final.pbix
 
-3. Verifique as conexões com os arquivos da pasta /data.
+• 3. Verifique as conexões com os arquivos da pasta /data.
 
 
-4. Explore os relatórios e interações.
+• 4. Explore os relatórios e interações.
 
 
 
@@ -150,13 +150,13 @@ git clone https://github.com/Santosdevbjj/dashboardGerencial
 
 ## ✔️ Sem Power BI Desktop
 
-Caso não possua o Power BI instalado, o projeto pode ser compreendido por meio de:
+• Caso não possua o Power BI instalado, o projeto pode ser compreendido por meio de:
 
-Documentação técnica em /docs, explicando a modelagem e os cálculos;
+• Documentação técnica em /docs, explicando a modelagem e os cálculos;
 
-Imagens e capturas de tela em /img;
+• Imagens e capturas de tela em /img;
 
-Descrição das medidas DAX e transformações aplicadas.
+• Descrição das medidas DAX e transformações aplicadas.
 
 
 
@@ -166,13 +166,13 @@ Descrição das medidas DAX e transformações aplicadas.
 
 Business Intelligence aplicado ao contexto gerencial
 
-UX Design em relatórios analíticos
+• UX Design em relatórios analíticos
 
-Storytelling de dados
+• Storytelling de dados
 
-Modelagem analítica
+• Modelagem analítica
 
-Métricas e KPIs orientados a decisão
+• Métricas e KPIs orientados a decisão
 
 
 
@@ -180,25 +180,25 @@ Métricas e KPIs orientados a decisão
 
 ## 📘 Etapas do Desenvolvimento
 
-1. Entendimento do problema
+• 1. Entendimento do problema
 
 
-2. Modelagem dos dados
+• 2. Modelagem dos dados
 
 
-3. Tratamento e transformação (Power Query)
+• 3. Tratamento e transformação (Power Query)
 
 
-4. Criação de medidas e KPIs (DAX)
+• 4. Criação de medidas e KPIs (DAX)
 
 
-5. Construção dos visuais
+• 5. Construção dos visuais
 
 
-6. Ajustes de layout e usabilidade
+• 6. Ajustes de layout e usabilidade
 
 
-7. Validação final
+• 7. Validação final
 
 
 
@@ -209,16 +209,16 @@ Métricas e KPIs orientados a decisão
 
 Contribuições são bem-vindas:
 
-1. Fork do repositório
+• 1. Fork do repositório
 
 
-2. Criação de branch (feature/minha-melhoria)
+• 2. Criação de branch (feature/minha-melhoria)
 
 
-3. Commit das alterações
+• 3. Commit das alterações
 
 
-4. Pull Request
+• 4. Pull Request
 
 
 
