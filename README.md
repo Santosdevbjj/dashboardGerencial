@@ -18,7 +18,7 @@ O desafio deste projeto foi direto: **construir um dashboard gerencial que gesto
 
 ## 2. Contexto
 
-Este projeto foi desenvolvido como parte do **Bootcamp NTT DATA**, com inspiração no desafio "Atualizando Relatório Financeiro com Foco na Experiência do Usuário" — adaptado para um cenário gerencial profissional real.
+Este projeto foi desenvolvido, com inspiração no desafio "Atualizando Relatório Financeiro com Foco na Experiência do Usuário" — adaptado para um cenário gerencial profissional real.
 
 O ponto de partida foi um conjunto de dados financeiros e operacionais consolidados em fontes heterogêneas (Excel, CSV e SQL), representando o ambiente típico de uma organização que acumula dados em silos sem uma camada analítica unificada.
 
